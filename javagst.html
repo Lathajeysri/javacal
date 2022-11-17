@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript form</title>
+        <link rel="stylesheet" href="javagst.css"></link>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="javagst.js"></script>
+    </head>
+    <body>
+        <div class="container centerali">
+        <table class="table table-secondary setwidth">
+            <thead>
+                <tr>
+                    <th>
+                    GST CALCULATOR
+                    </th>
+                    <th></th>
+                     </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Enter the price</td>
+                    <td> <input type="text" id ="pp" onkeyup="gstCalc(this.value)"></td>
+                </tr>
+                <tr>
+                    <td>Rate</td>
+                    <td>
+                        <select name="" id="rate"  onChange="gstCalc()">
+                            <option value="0">0%</option>
+                            <option value="5">5%</option>
+                            <option value="12">12%</option>
+                            <option value="18">18%</option>
+                            <option value="28">28%</option>
+                        </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td>Intrastate/Interstate</td>
+                        <td>
+                            <select name="" id="ps"  onChange="gstCalc()">
+                                <option value="0">Intrastate</option>
+                                <option value="1">Interstate</option>
+                             </select>
+                        </td>
+                        </tr>
+                        
+                        <tr>
+                            <td id>SGST</td>
+                            <td id="sgst"><input type="text"></td>
+                        </tr>
+                       
+                        <tr>
+                            <td id>CGST</td>
+                            <td id="cgst"><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Total Amount to pay</td>
+                            <td id="totalAmt"><input type="text"></td>
+                        </tr>
+            </tbody>
+        </table>
+        </div>
+            </body>
+        </html>
